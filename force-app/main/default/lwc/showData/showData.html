@@ -1,0 +1,61 @@
+<template>
+<article class="slds-card" lwc:if={showDetails}>
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-account" title="account">
+          <svg class="slds-icon slds-icon_small" aria-hidden="true">
+            <use
+								 xlink:href="/apexpages/slds/latest/assets/icons/standard-sprite/svg/symbols.svg#account"
+           ></use>
+          </svg>
+          <span class="slds-assistive-text">account</span>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+            <span>Accounts</span>
+        </h2>
+      </div>
+    </header>
+  </div>
+  <div class="slds-card__body">
+    <lightning-datatable key-field="id" data={accountColumnData} columns={accountColumns}></lightning-datatable>
+  </div>
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-contact" title="contact">
+          <svg class="slds-icon slds-icon_small" aria-hidden="true">
+          <use
+								 xlink:href="/apexpages/slds/latest/assets/icons/standard-sprite/svg/symbols.svg#contact"
+           ></use>
+          </svg>
+          <span class="slds-assistive-text">contact</span>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+          <span>Contacts</span>
+        </h2>
+      </div>
+    </header>
+  </div>
+  <div class="slds-card__body">
+    <lightning-datatable key-field="id" data={contactColumnData} columns={contactColumns}></lightning-datatable>
+  </div>
+</article>
+<lightning-card lwc:elseif={createRecord}>
+  <c-ocr-create-new-record></c-ocr-create-new-record>
+</lightning-card>
+<lightning-card lwc:else>
+  <br></br>
+  <div class="slds-text-longform">
+    <h1 class="slds-text-heading_large slds-text-align_center">Welcome to Visionary</h1>
+    <h2 class="slds-text-heading_small slds-text-align_center">An OCR Based Searching & Object Creation Tool For Salesforce</h2>
+    <div class="image-child">
+			<img src={firstColumnImageUrl} alt="url did't work" style="width: 600px; height: 400px;">
+		</div> 
+  </div>
+</lightning-card>
+</template>

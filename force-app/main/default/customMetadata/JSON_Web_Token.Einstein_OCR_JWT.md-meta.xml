@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="https://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Einstein_OCR_JWT</label>
+    <protected>false</protected>
+    <values>
+        <field>Algorithm__c</field>
+        <value xsi:type="xsd:string">RS256</value>
+    </values>
+    <values>
+        <field>Audiences__c</field>
+        <value xsi:type="xsd:string">https://api.einstein.ai/v2/oauth2/token</value>
+    </values>
+    <values>
+        <field>Endpoint__c</field>
+        <value xsi:type="xsd:string">https://api.einstein.ai/v2/oauth2/token</value>
+    </values>
+    <values>
+        <field>Issuer__c</field>
+        <value xsi:type="xsd:string">developer.force.com</value>
+    </values>
+    <values>
+        <field>RSA_Key__c</field>
+        <value xsi:type="xsd:string">Add Your own Key. Follow steps from Readme file</value>
+    </values>
+    <values>
+        <field>Subscriber__c</field>
+        <value xsi:type="xsd:string">yourEmailAddress</value>
+    </values>
+    <values>
+        <field>Token_Duration__c</field>
+        <value xsi:type="xsd:double">3600.0</value>
+    </values>
+</CustomMetadata>

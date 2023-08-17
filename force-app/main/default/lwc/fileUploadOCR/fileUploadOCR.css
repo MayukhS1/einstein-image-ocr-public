@@ -1,0 +1,55 @@
+.dummy{
+	color : black;
+}
+.Row {
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px; 
+}
+.Column {
+    display: table-cell;
+	border-radius: 10px;
+	border: 1px solid #bcbcbc;
+	box-shadow: 3px 3px 3px #bcbcbc;
+	padding: 20px;
+	width: 350px !important;
+	height: 15em !important;
+	max-height : 15em !important;
+    background-color: white; 
+}
+.Column2 {
+    display: table-cell;
+	border-radius: 10px;
+	border: 1px solid #bcbcbc;
+	box-shadow: 3px 3px 3px #bcbcbc;
+	padding: 20px;
+	width: 350px !important;
+	height: 15em !important;
+	max-height : 15em !important;
+	overflow-y: auto;
+    background-color: white; 
+}
+.image-parent{
+	display: block;
+	margin: auto;
+}
+
+.image-child{
+	text-align: center;
+}
+
+.image-bottom-corner{
+	text-align: right;
+	z-index: auto;
+	margin-bottom: 0;
+}
+
+.img-fixed-size{
+	width: 300px;
+	height: 12em;
+}
+
+.einstein-logo{
+	width: 5em;
+}
